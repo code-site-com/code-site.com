@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* ページ全体の高さを100%に */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* bodyの最小高さを100vhに設定 */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* 残りの高さを埋める */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1% 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin-right: 3%;
+}
+
+.nav-links li a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 3px solid #ffffff;
+    text-decoration: none;
+    color: #F9F9F9;
+}
+
+.nav-links li a:hover {
+    background-color: #333;
+    color: #E40505;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto; /* フッターを最下部に固定 */
+}
+
+.relative-content {
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00aeff;
+    line-height: 35px;
+    margin: 0% 0% -2% 0%;
+}
+
+#circle1 {
+    font-size: 30px;
+    color: #00aeff;
+}
+
+.kinnsi {
+    font-size: 150%;
+}
+
+.image-container {
+    display: flex;            
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 600px;
+    height: auto;
+    margin: 0 10px;
+}
+
+/* コードブロックの枠やスタイルを設定 */
+.code-container {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: left; /* 左寄せにする */
+    white-space: pre; /* 改行やスペースをそのまま保持 */
+}
+
+/* コード部分のスタイル */
+pre {
+    margin: 0;
+    font-family: monospace;
+    white-space: pre-wrap; /* コードが長い場合に折り返す */
+}
+
+/* コピー用のボタンのスタイル */
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* ボタンのホバー時のスタイル */
+.copy-btn:hover {
+    background-color: #0056b3;
+}
+
+.margin {
+    margin-bottom: 20px;
+}
+
+#arrange-vertically img {
+    display: block;
+    margin: 0 auto; /* 画像を中央揃えに */
+    margin-bottom: 20px; /* 画像同士の間隔を調整 */
+}
