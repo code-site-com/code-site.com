@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang=“ja”>
+        <head>
+        <meta http-equiv="content-language" content="ja">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>文字変換</title>
+        <link rel="icon" type="image/jpg" href="../../img/rogo2.jpg">
+        <link rel="stylesheet" href="../../css/detail.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="../../List.html">一覧</a></li>
+                        <li><a href="../../index.html">検索</a></li>
+                        <li><a href="#" onclick="history.back()" return false;>戻る</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="toriton"></section>
+                <div class="container50" id="c1">
+                    <h2>文字変換</h2>
+                </div>
+            </section>
+
+            <body>
+                <div>
+                    <p>全角を半角に、半角を全角に変換</p>
+                    <p>カタカナをひらがなに、ひらがなをカタカナに変換</p>
+                </div>
+
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            // 全角、半角を自動修正
+                            function normalize(str) {
+                                return str.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(s) {
+                                    return String.fromCharCode(s.charCodeAt(0) - (0x2121 - 0x21));
+                                }).replace(/[ぁ-んァ-ヶ]/g, function(s) {
+                                    return String.fromCharCode(s.charCodeAt(0) - (s >= "ァ" ? 0x60 : 0)); // カタカナをひらがなに、ひらがなをカタカナに変換
+                                });
+                            }
+                        </code>
+                    </pre>
+                </div>
+
+                <script src="../../JavaScript/script.js"></script>
+            </body>
+
+        <footer>
+            <div class="relative-content">
+                <div class="kinnsi">
+                    <p class="circle" div id="circle1">S</p>
+                    <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

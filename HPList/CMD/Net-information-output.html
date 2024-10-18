@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="content-language" content="ja">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ネット情報出力</title>
+        <link rel="icon" type="image/jpg" href="../../img/rogo2.jpg">
+        <link rel="stylesheet" href="../../css/detail.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="header-content">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="../../List.html">一覧</a></li>
+                            <li><a href="../../index.html">検索</a></li>
+                            <li><a href="#" onclick="history.back()" return false;>戻る</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section id="toriton"></section>
+                <div class="container50" id="c1">
+                    <h2>ネット情報出力</h2>
+                </div>
+            </section>
+
+            <body>
+                <div>
+                    <p>現在のWi-Fi（無線LAN）インターフェイスの詳細情報を表示することができます</p>
+                    <p>このコマンドを実行すると、以下のような情報が表示されることがあります</p>
+                    <p>名前: 無線ネットワークインターフェイスの名前</p>
+                    <p>状態: インターフェイスが接続されているかどうか</p>
+                    <p>SSID: 現在接続されているWi-Fiネットワークの名前</p>
+                    <p>信号強度: 接続しているネットワークの信号強度</p>
+                    <p>MACアドレス: 無線ネットワークインターフェイスの物理アドレス</p>
+                    <p>接続速度: 現在の接続速度</p>
+                    <p>セキュリティの種類: 使用されているセキュリティプロトコル（WPA2、WEPなど）</p>
+                </div>
+
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            netsh wlan show interfaces
+                        </code>
+                    </pre>
+                </div>
+            
+                <script src="../../JavaScript/script.js"></script>
+            </body>
+
+            <footer>
+                <div class="relative-content">
+                    <div class="kinnsi">
+                        <p class="circle" id="circle1">S</p>
+                        <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

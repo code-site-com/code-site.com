@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="content-language" content="ja">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IFERROR関数</title>
+        <link rel="icon" type="image/jpg" href="../../img/rogo2.jpg">
+        <link rel="stylesheet" href="../../css/detail.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="header-content">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="../../List.html">一覧</a></li>
+                            <li><a href="../../index.html">検索</a></li>
+                            <li><a href="#" onclick="history.back()" return false;>戻る</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section id="toriton"></section>
+                <div class="container50" id="c1">
+                    <h2>IFERROR関数</h2>
+                </div>
+            </section>
+
+            <body>
+                <div>
+                    <p>IFERROR関数はエラー時に指定した文字を表示する関数です。</p>
+                    <p>C1/C2は計算式(IF文を入力してエラー時に指定の文字を表示することも可能)</p>
+                    <p>"計算負荷です。"はエラー時に表示する文字です。</p>
+                    <p>3割る田中さんはできないので計算負荷です。と表示されています。</p>
+                    <p>""ダブルクォーテーションを付けるの忘れないようにしてください。</p>
+                </div>
+                
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =IFERROR(C1/C2,"計算負荷です。")
+                        </code>
+                    </pre>
+                </div>
+
+                <div Class="margin">
+                    <img src="../../img/Excel/iferror-function.png" alt="画像が表示できません">
+                </div>
+            
+                <script src="../../JavaScript/script.js"></script>
+            </body>
+
+            <footer>
+                <div class="relative-content">
+                    <div class="kinnsi">
+                        <p class="circle" id="circle1">S</p>
+                        <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

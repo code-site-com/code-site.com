@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang=“ja”>
+        <head>
+        <meta http-equiv="content-language" content="ja">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>線の追加</title>
+        <link rel="icon" type="image/jpg" href="../../img/rogo2.jpg">
+        <link rel="stylesheet" href="../../css/detail.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="../../List.html">一覧</a></li>
+                        <li><a href="../../index.html">検索</a></li>
+                        <li><a href="#" onclick="history.back()" return false;>戻る</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="toriton"></section>
+                <div class="container50" id="c1">
+                    <h2>線の追加</h2>
+                </div>
+            </section>
+
+            <body>
+                <div>
+                    <p>セルに線を引きます。</p>
+                    <p>Range("ここに線を引きたいセルを指定")</p>
+                    <p>(xlEdgeRight)はどこに線を引くか</p>
+                    <p>Weight = xlThickは何の線を引くのか</p>
+                </div>
+                
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            Sub 線を入力()
+                                Range("セル範囲").Borders(xlEdgeRight).Weight = xlThick
+                            End Sub
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="image-container">
+                    <img src="../../img/VBA/Add-line-xlEdgeRight.png" alt="画像が表示できません">
+                    <img src="../../img/VBA/Add-line-xlThick.png" alt="画像が表示できません">
+                </div>
+            
+                <script src="../../JavaScript/script.js"></script>
+            </body>
+
+        <footer class="margin">
+            <div class="relative-content">
+                <div class="kinnsi">
+                    <p class="circle" div id="circle1">S</p>
+                    <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

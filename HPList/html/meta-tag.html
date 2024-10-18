@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="content-language" content="ja">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>画面表示制御</title>
+        <link rel="icon" type="image/jpg" href="../../img/rogo2.jpg">
+        <link rel="stylesheet" href="../../css/detail.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="header-content">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="../../List.html">一覧</a></li>
+                            <li><a href="../../index.html">検索</a></li>
+                            <li><a href="#" onclick="history.back()" return false;>戻る</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section id="toriton"></section>
+                <div class="container50" id="c1">
+                    <h2>画面表示制御</h2>
+                </div>
+            </section>
+
+            <body>
+                <div>
+                    <p>モバイルデバイス向けにページの表示を最適化するために使われるHTMLのメタタグです</p>
+                    <p>&lt;meta&gt; タグ</p>
+                    <p>メタデータを文書に提供するために使用されるタグです。検索エンジンやブラウザに情報を提供します</p>
+                    <p>name="viewport"</p>
+                    <p>viewport は、ブラウザの表示領域（ビューポート）の設定を指定します。これにより、モバイルデバイスの画面サイズに基づいてレイアウトが調整されます</p>
+                    <p>width=device-width</p>
+                    <p>ビューポートの幅をデバイスの画面幅に設定します。これにより、画面サイズに合わせてレイアウトが自動的に調整されます</p>
+                    <p>initial-scale=1.0</p>
+                    <p>ページの初期表示倍率を1.0（100%）に設定します。つまり、ページが最初に読み込まれたときに、ユーザーが拡大縮小をしない限り、ページは実際のサイズで表示されます</p>
+                </div>
+
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        </code>
+                    </pre>
+                </div>
+            
+                <script src="../../JavaScript/script.js"></script>
+            </body>
+
+            <footer>
+                <div class="relative-content">
+                    <div class="kinnsi">
+                        <p class="circle" id="circle1">S</p>
+                        <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

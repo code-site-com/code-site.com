@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="content-language" content="ja">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>エスケープシーケンス</title>
+        <link rel="icon" type="image/jpg" href="../../img/rogo2.jpg">
+        <link rel="stylesheet" href="../../css/detail.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="header-content">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="../../List.html">一覧</a></li>
+                            <li><a href="../../index.html">検索</a></li>
+                            <li><a href="#" onclick="history.back()" return false;>戻る</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section id="toriton"></section>
+                <div class="container50" id="c1">
+                    <h2>エスケープシーケンス</h2>
+                </div>
+            </section>
+
+            <body>
+                <div>
+                    <p>特定の文字を表すために使用</p>
+                    <p> &amp;lt;</p>
+                    <p>&amp;lt;は&lt;</p>
+                    <p>&amp;gt;</p>
+                    <p>&amp;gt;は&gt;</p>
+                    <p>コードをブラウザ上に表示したい時に使用します</p>
+                </div>
+
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            &amp;lt;ここにコードを入力&amp;gt;
+                        </code>
+                    </pre>
+                </div>
+            
+                <script src="../../JavaScript/script.js"></script>
+            </body>
+
+            <footer>
+                <div class="relative-content">
+                    <div class="kinnsi">
+                        <p class="circle" id="circle1">S</p>
+                        <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

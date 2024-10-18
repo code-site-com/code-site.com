@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="content-language" content="ja">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SUMIF関数</title>
+        <link rel="icon" type="image/jpg" href="../../img/rogo2.jpg">
+        <link rel="stylesheet" href="../../css/detail.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="header-content">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="../../List.html">一覧</a></li>
+                            <li><a href="../../index.html">検索</a></li>
+                            <li><a href="#" onclick="history.back()" return false;>戻る</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section id="toriton"></section>
+                <div class="container50" id="c1">
+                    <h2>SUMIF関数</h2>
+                </div>
+            </section>
+
+            <body>
+                <div>
+                    <p>SUMIF関数は特定の条件に該当したセルのみ計算する関数です。</p>
+                    <p>条件下で足し算をする時に使用します。</p>
+                    <p>C1:C3が検索範囲、ここに条件と一致するものがあるか検索します。</p>
+                    <p>TRUEが条件ここは検索するものを指定します。</p>
+                    <p>D1:D3ここは計算する数値です。</p>
+                </div>
+                
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =SUMIF(C1:C3,TRUE,D1:D3)
+                        </code>
+                    </pre>
+                </div>
+
+                <div Class="margin">
+                    <img src="../../img/Excel/sumif-function.png" alt="画像が表示できません">
+                </div>
+            
+                <script src="../../JavaScript/script.js"></script>
+            </body>
+
+            <footer>
+                <div class="relative-content">
+                    <div class="kinnsi">
+                        <p class="circle" id="circle1">S</p>
+                        <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

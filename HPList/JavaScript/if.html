@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang=“ja”>
+        <head>
+        <meta http-equiv="content-language" content="ja">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IF文</title>
+        <link rel="icon" type="image/jpg" href="../../img/rogo2.jpg">
+        <link rel="stylesheet" href="../../css/detail.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="../../List.html">一覧</a></li>
+                        <li><a href="../../index.html">検索</a></li>
+                        <li><a href="#" onclick="history.back()" return false;>戻る</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="toriton"></section>
+                <div class="container50" id="c1">
+                    <h2>IF文</h2>
+                </div>
+            </section>
+
+            <body>
+                <div>
+                    <p>IF文は条件分岐の際に使用します。</p>
+                    <p>条件のところは～ならと書きます。(例:A&lt;B)←AよりBが大きければ</p>
+                    <p>「条件が成り立った場合処理を実行」のところは条件に該当した場合どんな処理をするかを書きます。</p>
+                    <p>(例:"Hello")条件に該当した場合Helloと表示されます。</p>
+                    <p>「else if」は2つ目の条件</p>
+                    <p>「else」は条件に該当しなかった場合の処理</p>
+                    <p>「else」を書かないと条件に該当しない場合は何も処理を実行しない事になる。</p>
+                </div>
+
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            if (条件1) {
+                                条件1が成り立った場合処理を実行
+                            } else if (条件2) {
+                                条件2が成り立った場合処理を実行
+                            } else {
+                                条件1と条件2が成り立たなかった場合処理を実行
+                            }
+                        </code>
+                    </pre>
+                </div>
+
+                <script src="../../JavaScript/script.js"></script>
+            </body>
+
+        <footer>
+            <div class="relative-content">
+                <div class="kinnsi">
+                    <p class="circle" div id="circle1">S</p>
+                    <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

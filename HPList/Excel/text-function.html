@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="content-language" content="ja">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TEXT関数</title>
+        <link rel="icon" type="image/jpg" href="../../img/rogo2.jpg">
+        <link rel="stylesheet" href="../../css/detail.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="header-content">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="../../List.html">一覧</a></li>
+                            <li><a href="../../index.html">検索</a></li>
+                            <li><a href="#" onclick="history.back()" return false;>戻る</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section id="toriton"></section>
+                <div class="container50" id="c1">
+                    <h2>TEXT関数</h2>
+                </div>
+            </section>
+
+            <body>
+                <div>
+                    <p>TEXT関数は数値や日付を文字列に変換したり、他の文字列とつなげたりして表示形式を変更する関数です。</p>
+                    <p>TODAY()は値を入力します。</p>
+                    <p>aaaaは表示形式コードです。</p>
+                    <p>表示形式コードは下記画像を参考ください。</p>
+                </div>
+                
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =TEXT(TODAY(),"AAAA")
+                        </code>
+                    </pre>
+                </div>
+
+                <div Class="margin" id="arrange-vertically">
+                    <img src="../../img/Excel/text-function.png" alt="画像が表示できません">
+                    <p>表示形式コード</p>
+                    <img src="../../img/Excel/text-Display-format-function.png" alt="画像が表示できません">
+                </div>
+
+                <p>桁区切り記号と小数点以下 2 桁を設定した通貨(例: $1,234.57)</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =TEXT(1234.567,"$#,##0.00")
+                        </code>
+                    </pre>
+                </div>
+
+                <p>月/日/年の形式の今日の日付 (例: 03/14/12)</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =TEXT(TODAY(),"MM/DD/YY")
+                        </code>
+                    </pre>
+                </div>
+
+                <p>年/月/日の形式の今日の日付 (例: 2012年12月14日)</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =TEXT(TODAY(),"YYYY年MM月DD日")
+                        </code>
+                    </pre>
+                </div>
+
+                <p>今日の曜日 (例: 月曜日)</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =TEXT(TODAY(),"AAAA")
+                        </code>
+                    </pre>
+                </div>
+
+                <p>現在の時刻 (例: 1:29 PM)</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =TEXT(NOW(),"H:MM AM/PM")
+                        </code>
+                    </pre>
+                </div>
+
+                <p>パーセンテージ (例: 28.5%)</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =TEXT(0.285,"0.0%")
+                        </code>
+                    </pre>
+                </div>
+
+                <p>分数 (例: 4 1/3)</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =TEXT(4.34 ,"# ?/?")
+                        </code>
+                    </pre>
+                </div>
+
+                <p>分数 (例: 1/3)</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =TRIM(TEXT(0.34,"# ?/?"))
+                        </code>
+                    </pre>
+                </div>
+
+                <p>指数表記 (例: 1.22E+07)</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =TEXT(12200000,"0.00E+00")
+                        </code>
+                    </pre>
+                </div>
+
+                <p>その他 (電話番号) (例: (123) 456-7898)</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =TEXT(1234567898,"[<=9999999]###-####;(###) ###-####")
+                        </code>
+                    </pre>
+                </div>
+
+                <p>先頭のゼロ (0) を追加 (例: 0001234)</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =TEXT(1234,"0000000")
+                        </code>
+                    </pre>
+                </div>
+
+                <p>ユーザー設定 - 緯度/経度</p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =TEXT(123456,"##0° 00' 00''")
+                        </code>
+                    </pre>
+                </div>
+            
+                <script src="../../JavaScript/script.js"></script>
+            </body>
+
+            <footer>
+                <div class="relative-content">
+                    <div class="kinnsi">
+                        <p class="circle" id="circle1">S</p>
+                        <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

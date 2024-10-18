@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="content-language" content="ja">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VLOOKUP関数</title>
+        <link rel="icon" type="image/jpg" href="../../img/rogo2.jpg">
+        <link rel="stylesheet" href="../../css/detail.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="header-content">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="../../List.html">一覧</a></li>
+                            <li><a href="../../index.html">検索</a></li>
+                            <li><a href="#" onclick="history.back()" return false;>戻る</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section id="toriton"></section>
+                <div class="container50" id="c1">
+                    <h2>VLOOKUP関数</h2>
+                </div>
+            </section>
+
+            <body>
+                <div>
+                    <p>VLOOKUP関数はデータを検索し特定の値に一致するデータを抽出する関数です。</p>
+                    <p>A1は検索する為のセルです。</p>
+                    <p>D1:E3は検索範囲です。</p>
+                    <p>2は返す値です。検索範囲内の何番目かで指定します。</p>
+                    <p>FALSEは検索の型です。</p>
+                    <p>FALSEは検索文字と完全一致したデータを返します。</p>
+                    <p>TRUEは検索文字と近似一致したデータを返します。</p>
+                </div>
+                
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode()">コピー</button>
+                    <pre>
+                        <code id="code-block">
+                            =VLOOKUP(A1,D1:E3,2,FALSE)
+                        </code>
+                    </pre>
+                </div>
+
+                <div Class="margin">
+                    <img src="../../img/Excel/vlookup-function.png" alt="画像が表示できません">
+                </div>
+            
+                <script src="../../JavaScript/script.js"></script>
+            </body>
+
+            <footer>
+                <div class="relative-content">
+                    <div class="kinnsi">
+                        <p class="circle" id="circle1">S</p>
+                        <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
