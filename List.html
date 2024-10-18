@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>検索ページ</title>
+    <link rel="icon" type="image/jpg" href="img/rogo2.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+</head>
+
+<script>
+    jQuery(document).ready(function() {
+        // スクロールトップボタンの処理
+        var offset = 100;
+        var duration = 500;
+        jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery('.pagetop').fadeIn(duration);
+            } else {
+                jQuery('.pagetop').fadeOut(duration);
+            }
+        });
+
+        jQuery('.pagetop').click(function(event) {
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+            return false;
+        });
+    });
+</script>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>一覧</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="List.html">一覧</a></li>
+                    <li><a href="index.html">検索</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="services">
+        <div class="container1" div id="c1">
+            <h3>目次</h3>
+            <ul id="box">
+                <li><a href="#Python">Python</a></li>
+                <li><a href="#CMD">CMD</a></li>
+                <li><a href="#SQL">SQL</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#JavaScript">JavaScript</a></li>
+                <li><a href="#VBA">VBA</a></li>
+                <li><a href="#Excel">Excel</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <!--Python-->
+        <section>
+            <div id="Python" class="frame-category">
+                <h3>Python</h3>
+            </div>
+        </section>
+
+        <!--CMD-->
+        <section>
+            <div id="CMD" class="frame-category">
+                <h3>CMD</h3>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>ネット情報出力</h4>
+                <p>現在のWi-Fi等の情報表示</p>
+                <a href="HPList/CMD/Net-information-output.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <!--SQL-->
+        <section>
+            <div id="SQL" class="frame-category">
+                <h3>SQL</h3>
+            </div>
+        </section>
+
+        <!--HTML-->
+        <section>
+            <div id="html" class="frame-category">
+                <h3>HTML</h3>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>HTMLの初期入力</h4>
+                <p>宣言</p>
+                <a href="HPList/html/declaration.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>コメント</h4>
+                <p>コメントの追加方法</p>
+                <a href="HPList/html/comment.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>画像表示</h4>
+                <p>画像の表示方法</p>
+                <a href="HPList/html/image.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>JavaScript紐づけ</h4>
+                <p>JavaScriptへ紐づける方法</p>
+                <a href="HPList/html/javascript-binding.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>CSS紐づけ</h4>
+                <p>CSSへ紐づける方法</p>
+                <a href="HPList/html/css-binding.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>Favicon</h4>
+                <p>ホームページのタブに表示される小さな画像</p>
+                <a href="HPList/html/favicon.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>title</h4>
+                <p>ホームページのタイトル</p>
+                <a href="HPList/html/title.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>文書型宣言</h4>
+                <p>最初の行に記載される宣言</p>
+                <a href="HPList/html/document-type-declaration.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>言語宣言</h4>
+                <p>どの言語で記述されているかを記載</p>
+                <a href="HPList/html/language-declaration.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>画面表示制御</h4>
+                <p>モバイルデバイスやレスポンシブデザインを考慮</p>
+                <a href="HPList/html/meta-tag.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>エンコード</h4>
+                <p>文字エンコーディングを指定</p>
+                <a href="HPList/html/encode-tag.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>エスケープシーケンス</h4>
+                <p>文字エンコーディングを指定</p>
+                <a href="HPList/html/escape-sequence.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <!--CSS-->
+        <section>
+            <div id="css" class="frame-category">
+                <h3>CSS</h3>
+            </div>
+        </section>
+
+        <!--JavaScript-->
+        <section>
+            <div id="JavaScript" class="frame-category">
+                <h3>JavaScript</h3>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>IF文</h4>
+                <p>条件分岐</p>
+                <a href="HPList/JavaScript/if.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>文字変換</h4>
+                <p>全角,半角、ひらがな,カタカナを変換</p>
+                <a href="HPList/JavaScript/full-width-half-width-correction.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <!--VBA-->
+        <section>
+            <div id="VBA" class="frame-category">
+                <h3>VBA</h3>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>線を追加</h4>
+                <p>各種線の追加方法</p>
+                <a href="HPList/VBA/Add-line.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <!--Excel-->
+        <section>
+            <div id="Excel" class="frame-category">
+                <h3>Excel</h3>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>SUM関数</h4>
+                <p>足し算</p>
+                <a href="HPList/Excel/sum-function.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>SUMIF関数</h4>
+                <p>条件付き足し算</p>
+                <a href="HPList/Excel/sumif-function.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>AVERAGE関数</h4>
+                <p>平均</p>
+                <a href="HPList/Excel/average-function.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>MAX関数</h4>
+                <p>最大値</p>
+                <a href="HPList/Excel/max-function.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>MIN関数</h4>
+                <p>最小値</p>
+                <a href="HPList/Excel/min-function.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>ROUND関数</h4>
+                <p>四捨五入</p>
+                <a href="HPList/Excel/round-function.html">詳細ページ</a>
+            </div>
+        </section>
+        
+        <section>
+            <div class="frame">
+                <h4>DATE関数</h4>
+                <p>日付</p>
+                <a href="HPList/Excel/date-function.html">詳細ページ</a>
+            </div>
+        </section>
+        
+        <section>
+            <div class="frame">
+                <h4>TEXT関数</h4>
+                <p>数値や日付を文字列に変換,他の文字列と繋げる</p>
+                <a href="HPList/Excel/text-function.html">詳細ページ</a>
+            </div>
+        </section>
+        
+        <section>
+            <div class="frame">
+                <h4>COVNT関数</h4>
+                <p>セル個数カウント</p>
+                <a href="HPList/Excel/covnt-function.html">詳細ページ</a>
+            </div>
+        </section>
+        
+        <section>
+            <div class="frame">
+                <h4>COUNTIF関数</h4>
+                <p>条件付きセル個数カウント</p>
+                <a href="HPList/Excel/countif-function.html">詳細ページ</a>
+            </div>
+        </section>
+        
+        <section>
+            <div class="frame">
+                <h4>IF関数</h4>
+                <p>条件式</p>
+                <a href="HPList/Excel/if-function.html">詳細ページ</a>
+            </div>
+        </section>
+        
+        <section>
+            <div class="frame">
+                <h4>VLOOKUP関数</h4>
+                <p>一致した値と同じ行にあるデータを返す</p>
+                <a href="HPList/Excel/vlookup-function.html">詳細ページ</a>
+            </div>
+        </section>
+        
+        <section>
+            <div class="frame">
+                <h4>IFERROR関数</h4>
+                <p>エラー時に指定した文字を表示</p>
+                <a href="HPList/Excel/iferror-function.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>書式設定方法</h4>
+                <p>書式の設定変更方法</p>
+                <a href="HPList/Excel/formatting.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>ROUNDDOWN関数</h4>
+                <p>切り捨て</p>
+                <a href="HPList/Excel/rounddown-function.html">詳細ページ</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="frame">
+                <h4>ROUNDUP関数</h4>
+                <p>切り上げ</p>
+                <a href="HPList/Excel/roundup-function.html">詳細ページ</a>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <div class="relative-content">
+            <div class="kinnsi">
+                <p class="circle" div id="circle1">S</p>
+                <p class="kinnsi2">&copy; 2024 My Website. All reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="pagetop" >↑</div>
+
+    <script src="JavaScript/script.js"></script> <!-- JavaScriptファイルを読み込む -->
+</body>
+</html>
